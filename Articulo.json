@@ -1,0 +1,148 @@
+﻿[
+  {
+    "n": {
+      "identity": 0,
+      "labels": [
+        "Idioma"
+      ],
+      "properties": {
+        "abreviacion": "ES",
+        "nombre": "Español"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:0"
+    }
+  },
+  {
+    "n": {
+      "identity": 1,
+      "labels": [
+        "Categoria"
+      ],
+      "properties": {
+        "nombre": "Fútbol"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:1"
+    }
+  },
+  {
+    "n": {
+      "identity": 2,
+      "labels": [
+        "Post"
+      ],
+      "properties": {
+        "descripcion": "Lionel Messi no forma parte de la doble fecha FIFA y Lionel Scaloni ya definió quién se hará cargo del dorsal del GOAT",
+        "titulo": "Ante la ausencia de Lionel Messi, ¿quién usará la 10 en la Selección argentina?",
+        "fechaPublicacion": "2025-03-19",
+        "url": "https://www.diariouno.com.ar/ovacion/futbol/ante-la-ausencia-lionel-messi-quien-usara-la-10-la-seleccion-argentina-n1414163"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:2"
+    }
+  },
+  {
+    "n": {
+      "identity": 3,
+      "labels": [
+        "Autor"
+      ],
+      "properties": {
+        "usuario": "fsalamone",
+        "nombre": "Fabián Salamone",
+        "email": "salamone.fabian@grupoamerica.com.ar"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:3"
+    }
+  },
+  {
+    "n": {
+      "identity": 4,
+      "labels": [
+        "Etiqueta"
+      ],
+      "properties": {
+        "nombre": "Lionel Messi"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:4"
+    }
+  },
+  {
+    "n": {
+      "identity": 5,
+      "labels": [
+        "Etiqueta"
+      ],
+      "properties": {
+        "nombre": "Selección Argentina"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:5"
+    }
+  },
+  {
+    "n": {
+      "identity": 6,
+      "labels": [
+        "Etiqueta"
+      ],
+      "properties": {
+        "nombre": "Ángel Correa"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:6"
+    }
+  },
+  {
+    "n": {
+      "identity": 7,
+      "labels": [
+        "Usuario"
+      ],
+      "properties": {
+        "usuario": "cgomez",
+        "nombre": "Carlos Gómez",
+        "email": "cgomez@email.com"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:7"
+    }
+  },
+  {
+    "n": {
+      "identity": 8,
+      "labels": [
+        "Editor"
+      ],
+      "properties": {
+        "usuario": "mlopez",
+        "nombre": "María López",
+        "email": "mlopez@editorial.com"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:8"
+    }
+  },
+  {
+    "n": {
+      "identity": 9,
+      "labels": [
+        "Media"
+      ],
+      "properties": {
+        "tipo": "imagen",
+        "fechaSubida": "2025-03-19",
+        "titulo": "Imagen destacada del artículo",
+        "url": "https://www.diariouno.com.ar/ovacion/futbol/ante-la-ausencia-lionel-messi-quien-usara-la-10-la-seleccion-argentina-n1414163"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:9"
+    }
+  },
+  {
+    "n": {
+      "identity": 10,
+      "labels": [
+        "Comentario"
+      ],
+      "properties": {
+        "contenido": "Gran artículo sobre la selección!",
+        "fechaCreacion": "2025-03-19"
+      },
+      "elementId": "4:881ca853-0405-4a53-ab27-b1b80145b550:10"
+    }
+  }
+]
