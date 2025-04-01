@@ -1,0 +1,28 @@
+ Crear los nodos
+CREATE (idiomaIdioma {abreviacion 'ES', nombre 'Español'})
+CREATE (categoriaCategoria {nombre 'Fútbol'})
+CREATE (postPost {descripcion 'Lionel Messi no forma parte de la doble fecha FIFA y Lionel Scaloni ya definió quién se hará cargo del dorsal del GOAT', 
+                   titulo 'Ante la ausencia de Lionel Messi, ¿quién usará la 10 en la Selección argentina', 
+                   fechaPublicacion '2025-03-19', 
+                   url 'httpswww.diariouno.com.arovacionfutbolante-la-ausencia-lionel-messi-quien-usara-la-10-la-seleccion-argentina-n1414163'})
+CREATE (autorAutor {usuario 'fsalamone', nombre 'Fabián Salamone', email 'salamone.fabian@grupoamerica.com.ar'})
+CREATE (etiqueta1Etiqueta {nombre 'Lionel Messi'})
+CREATE (etiqueta2Etiqueta {nombre 'Selección Argentina'})
+CREATE (etiqueta3Etiqueta {nombre 'Ángel Correa'})
+CREATE (usuarioUsuario {usuario 'cgomez', nombre 'Carlos Gómez', email 'cgomez@email.com'})
+CREATE (editorEditor {usuario 'mlopez', nombre 'María López', email 'mlopez@editorial.com'})
+CREATE (mediaMedia {tipo 'imagen', fechaSubida '2025-03-19', titulo 'Imagen destacada del artículo', 
+                    url 'httpswww.diariouno.com.arovacionfutbolante-la-ausencia-lionel-messi-quien-usara-la-10-la-seleccion-argentina-n1414163'})
+CREATE (comentarioComentario {contenido 'Gran artículo sobre la selección!', fechaCreacion '2025-03-19'})
+
+ Establecer las relaciones (Ejemplo, puedes adaptarlas dependiendo de la lógica de tu modelo)
+CREATE (autor)-[ESCRIBIO]-(post)
+CREATE (categoria)-[PERTENECE_A]-(post)
+CREATE (idioma)-[TIENE_IDIOMA]-(post)
+CREATE (post)-[TIENE_ETIQUETAS]-(etiqueta1)
+CREATE (post)-[TIENE_ETIQUETAS]-(etiqueta2)
+CREATE (post)-[TIENE_ETIQUETAS]-(etiqueta3)
+CREATE (usuario)-[COMENTO]-(comentario)
+CREATE (comentario)-[EN]-(post)
+CREATE (editor)-[EDITO]-(post)
+CREATE (media)-[ES_IMAGEN_DE]-(post)
