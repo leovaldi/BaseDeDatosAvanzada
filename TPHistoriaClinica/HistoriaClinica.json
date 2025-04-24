@@ -1,0 +1,208 @@
+﻿[
+  {
+    "n": {
+      "identity": 0,
+      "labels": [
+        "Paciente"
+      ],
+      "properties": {
+        "fechaDeNacimiento": "2005-02-28",
+        "obraSocial": "Swiss Medical",
+        "apellido": "Valdivia",
+        "sexo": "M",
+        "nombre": "Leonel",
+        "DNI": "46333333"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:0"
+    }
+  },
+  {
+    "n": {
+      "identity": 1,
+      "labels": [
+        "Paciente"
+      ],
+      "properties": {
+        "fechaDeNacimiento": "1999-03-24",
+        "obraSocial": "OSDE",
+        "apellido": "Gomez",
+        "sexo": "F",
+        "nombre": "Maria",
+        "DNI": "12345678"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:1"
+    }
+  },
+  {
+    "n": {
+      "identity": 2,
+      "labels": [
+        "Medico"
+      ],
+      "properties": {
+        "apellido": "Rivas",
+        "matricula": "1234",
+        "nombre": "Laura",
+        "especialidad": "Clínica"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:2"
+    }
+  },
+  {
+    "n": {
+      "identity": 3,
+      "labels": [
+        "Medico"
+      ],
+      "properties": {
+        "apellido": "Driussi",
+        "matricula": "4567",
+        "nombre": "Sebastian",
+        "especialidad": "Cardiología"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:3"
+    }
+  },
+  {
+    "n": {
+      "identity": 4,
+      "labels": [
+        "Consulta"
+      ],
+      "properties": {
+        "fecha": "2024-03-15",
+        "motivo": "Dolor abdominal",
+        "observaciones": "Posible gastritis"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:4"
+    }
+  },
+  {
+    "n": {
+      "identity": 5,
+      "labels": [
+        "Consulta"
+      ],
+      "properties": {
+        "fecha": "2024-04-10",
+        "motivo": "Chequeo cardíaco",
+        "observaciones": "Electro normal"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:5"
+    }
+  },
+  {
+    "n": {
+      "identity": 6,
+      "labels": [
+        "Diagnostico"
+      ],
+      "properties": {
+        "descripcion": "Inflamación de la mucosa estomacal",
+        "codigo": "K29.70",
+        "nombre": "Gastritis"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:6"
+    }
+  },
+  {
+    "n": {
+      "identity": 7,
+      "labels": [
+        "Diagnostico"
+      ],
+      "properties": {
+        "descripcion": "Presión arterial elevada",
+        "codigo": "I10",
+        "nombre": "Hipertensión"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:7"
+    }
+  },
+  {
+    "n": {
+      "identity": 8,
+      "labels": [
+        "Estudio"
+      ],
+      "properties": {
+        "fecha": "2024-03-16",
+        "tipo": "Ecografía abdominal",
+        "resultado": "Sin hallazgos"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:8"
+    }
+  },
+  {
+    "n": {
+      "identity": 9,
+      "labels": [
+        "Estudio"
+      ],
+      "properties": {
+        "fecha": "2024-04-10",
+        "tipo": "Electrocardiograma",
+        "resultado": "Normal"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:9"
+    }
+  },
+  {
+    "n": {
+      "identity": 10,
+      "labels": [
+        "Tratamiento"
+      ],
+      "properties": {
+        "descripcion": "Dieta blanda",
+        "fecha_inicio": "2024-03-15",
+        "fecha_fin": "2024-03-22",
+        "duracion": "7 días"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:10"
+    }
+  },
+  {
+    "n": {
+      "identity": 11,
+      "labels": [
+        "Tratamiento"
+      ],
+      "properties": {
+        "descripcion": "Control de presión",
+        "fecha_inicio": "2024-04-10",
+        "fecha_fin": "",
+        "duracion": "Indefinido"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:11"
+    }
+  },
+  {
+    "n": {
+      "identity": 12,
+      "labels": [
+        "Medicamento"
+      ],
+      "properties": {
+        "frecuencia": "1 vez por día",
+        "dosis": "20mg",
+        "nombre": "Omeprazol"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:12"
+    }
+  },
+  {
+    "n": {
+      "identity": 13,
+      "labels": [
+        "Medicamento"
+      ],
+      "properties": {
+        "frecuencia": "2 veces por día",
+        "dosis": "10mg",
+        "nombre": "Enalapril"
+      },
+      "elementId": "4:995230e1-7ea1-48b8-b3d6-4f881ea7ba7c:13"
+    }
+  }
+]

@@ -1,0 +1,42 @@
+// Crear pacientes
+CREATE (p1:Paciente {nombre: "Leonel", apellido: "Valdivia", DNI: "46333333", fechaDeNacimiento: "2005-02-28", sexo: "M", obraSocial: "Swiss Medical"});
+CREATE (p2:Paciente {nombre: "María", apellido: "Gómez", DNI: "12345678", fechaDeNacimiento: "1999-093-24", sexo: "F", obraSocial: "OSDE"});
+
+// Crear médicos
+CREATE (m1:Medico {nombre: "Laura", apellido: "Rivas", matricula: "1234", especialidad: "Clínica"});
+CREATE (m2:Medico {nombre: "Sebastian", apellido: "Driussi", matricula: "4567", especialidad: "Cardiología"});
+
+// Crear consultas
+CREATE (c1:Consulta {fecha: "2024-03-15", motivo: "Dolor abdominal", observaciones: "Posible gastritis"});
+CREATE (c2:Consulta {fecha: "2024-04-10", motivo: "Chequeo cardíaco", observaciones: "Electro normal"});
+
+// Crear diagnóstico
+CREATE (d1:Diagnostico {nombre: "Gastritis", descripcion: "Inflamación de la mucosa estomacal", codigo: "K29.70"});
+CREATE (d2:Diagnostico {nombre: "Hipertensión", descripcion: "Presión arterial elevada", codigo: "I10"});
+
+// Crear estudios
+CREATE (e1:Estudio {tipo: "Ecografía abdominal", resultado: "Sin hallazgos", fecha: "2024-03-16"});
+CREATE (e2:Estudio {tipo: "Electrocardiograma", resultado: "Normal", fecha: "2024-04-10"});
+
+// Crear tratamientos
+CREATE (t1:Tratamiento {descripcion: "Dieta blanda", duracion: "7 días", fecha_inicio: "2024-03-15", fecha_fin: "2024-03-22"});
+CREATE (t2:Tratamiento {descripcion: "Control de presión", duracion: "Indefinido", fecha_inicio: "2024-04-10", fecha_fin: ""});
+
+// Crear medicamentos
+CREATE (med1:Medicamento {nombre: "Omeprazol", dosis: "20mg", frecuencia: "1 vez por día"});
+CREATE (med2:Medicamento {nombre: "Enalapril", dosis: "10mg", frecuencia: "2 veces por día"});
+
+// Relaciones
+MATCH (p:Paciente {DNI: "46333333"}), (c:Consulta {fecha: "2024-03-15"}) CREATE (p)-[:REALIZO]->(c);
+MATCH (c:Consulta {fecha: "2024-03-15"}), (m:Medico {matricula: "1234"}) CREATE (c)-[:ATENDIDO_POR]->(m);
+MATCH (c:Consulta {fecha: "2024-03-15"}), (d:Diagnostico {codigo: "K29.70"}) CREATE (c)-[:DIAGNOSTICO]->(d);
+MATCH (c:Consulta {fecha: "2024-03-15"}), (e:Estudio {tipo: "Ecografía abdominal"}) CREATE (c)-[:INCLUYE]->(e);
+MATCH (c:Consulta {fecha: "2024-03-15"}), (t:Tratamiento {descripcion: "Dieta blanda"}) CREATE (c)-[:RECIBE_TRATAMIENTO]->(t);
+MATCH (t:Tratamiento {descripcion: "Dieta blanda"}), (med:Medicamento {nombre: "Omeprazol"}) CREATE (t)-[:USA]->(med);
+
+MATCH (p:Paciente {DNI: "12345678"}), (c:Consulta {fecha: "2024-04-10"}) CREATE (p)-[:REALIZO]->(c);
+MATCH (c:Consulta {fecha: "2024-04-10"}), (m:Medico {matricula: "5678"}) CREATE (c)-[:ATENDIDO_POR]->(m);
+MATCH (c:Consulta {fecha: "2024-04-10"}), (d:Diagnostico {codigo: "I10"}) CREATE (c)-[:DIAGNOSTICO]->(d);
+MATCH (c:Consulta {fecha: "2024-04-10"}), (e:Estudio {tipo: "Electrocardiograma"}) CREATE (c)-[:INCLUYE]->(e);
+MATCH (c:Consulta {fecha: "2024-04-10"}), (t:Tratamiento {descripcion: "Control de presión"}) CREATE (c)-[:RECIBE_TRATAMIENTO]->(t);
+MATCH (t:Tratamiento {descripcion: "Control de presión"}), (med:Medicamento {nombre: "Enalapril"}) CREATE (t)-[:USA]->(med);
